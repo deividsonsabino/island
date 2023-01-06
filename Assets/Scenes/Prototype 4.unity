@@ -229,10 +229,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ae15048540b4845981acbbe39aae9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab:
+  enemyPrefabs:
   - {fileID: 1396006724025424057, guid: 61cf3c4efddde9743a3372794a463ea5, type: 3}
   - {fileID: 2162170381965770444, guid: c750a37f891d46a49a62a63ad0fa3d50, type: 3}
-  powerupPrefab: {fileID: 1960005823179667903, guid: b09d356a062cf8a429a012de6e8d95a5, type: 3}
+  powerupPrefabs:
+  - {fileID: 1960005823179667903, guid: b09d356a062cf8a429a012de6e8d95a5, type: 3}
+  - {fileID: 2275931585686408215, guid: e6c96c600e6bd824e9634da07f9b9f4d, type: 3}
   enemyCount: 0
   waveNumber: 1
 --- !u!4 &650094198
@@ -777,7 +779,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581411232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08123398, y: 2.309791, z: -4.4943957}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1215,6 +1217,8 @@ MonoBehaviour:
   speed: 5
   hasPowerup: 0
   powerupIndicator: {fileID: 802387383}
+  currentPowerUp: 0
+  rocketPrefab: {fileID: 4293193003382249048, guid: 647d9b4ab926a1d4fbaaffdcd2163ba2, type: 3}
 --- !u!1001 &7305732181041295649
 PrefabInstance:
   m_ObjectHideFlags: 0
