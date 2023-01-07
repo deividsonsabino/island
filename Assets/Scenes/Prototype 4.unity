@@ -236,6 +236,7 @@ MonoBehaviour:
   - {fileID: 1960005823179667903, guid: b09d356a062cf8a429a012de6e8d95a5, type: 3}
   - {fileID: 2275931585686408215, guid: e6c96c600e6bd824e9634da07f9b9f4d, type: 3}
   - {fileID: 1960005823179667903, guid: 55aea1c33c682764082d0e77b011c374, type: 3}
+  boss: {fileID: 3728682323576635139, guid: af8354a39d395fe4a8e0e79bbc58eecb, type: 3}
   enemyCount: 0
   powerupCount: 0
   waveNumber: 1

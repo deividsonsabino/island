@@ -6,6 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
     public GameObject[] powerupPrefabs;
+    public GameObject boss;
     private float spawnRange = 9.0f;
     public int enemyCount;
     public int powerupCount = 1;
@@ -23,10 +24,16 @@ public class SpawnManager : MonoBehaviour
     {
         enemyCount = FindObjectsOfType<Enemy>().Length;
         powerupCount = FindObjectsOfType<PowerUp>().Length;
-        Debug.Log("powerupCount : " + powerupCount);
+
+
 
         if (enemyCount == 0)
         {
+            if (waveNumber == 2)
+            {
+                Instantiate(boss, new Vector3(0, 2, 0), boss.transform.rotation);
+            }
+
             waveNumber++;
             SpawnEnemyWave(waveNumber);
             int randomPowerup = Random.Range(0, powerupPrefabs.Length);
